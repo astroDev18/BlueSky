@@ -1,0 +1,11 @@
+Goal: Set up error handling for requests to Weather & GeoLocation API's
+
+Additions:
+1. Set up an error handler for low-level errors
+2. Test by disabling network requests and running the app
+3. Setup error handling with no matching results
+4. Test by altering the search term and running the app.
+
+Steps:
+1. Use an if statement to check for an error and if true return console.log with error statement and check it
+3. Check if response.body.features[0] returns undefined and if true, return console log unable to find location

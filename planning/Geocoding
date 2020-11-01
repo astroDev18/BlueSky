@@ -1,0 +1,10 @@
+Setting up geocoding:
+
+Address ==> Lat/Long ==> Weather
+
+Goal: Print the lat/long for los angeles
+
+1. Fire off a new request to the URL explored in the browser
+2. Have the request module parse it as JSON
+3. Print both the latitude and longitude to the terminal
+4. Test your work!
