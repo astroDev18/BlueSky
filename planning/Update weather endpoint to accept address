@@ -1,0 +1,6 @@
+Goal: Update weather endpoint to accept addresses
+
+1. No address? Send back an error message.
+2. Address? Send back the JSON.
+3. Add address property onto JSON which returns the provided address
+4. Test /weather and /weather?address=philadelphia

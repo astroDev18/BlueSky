@@ -1,0 +1,9 @@
+Goal - Accept location via command line:
+
+1. Accept command line input
+2. Use the string value input for Geocode
+3. Only geocode if a location was provided
+
+
+Solve:
+1. Use

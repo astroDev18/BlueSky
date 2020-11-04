@@ -1,0 +1,5 @@
+Goal: Create a partial for the footer
+
+1. Setup the template for the footer partial "Created by some name!"
+2. Render the partial at the bottom of all three pages
+3. Test your work by visiting all three pages
