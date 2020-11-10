@@ -9,10 +9,11 @@ const forecast = (latitude, longitude, callback) => {
         } else if (body.error) {
             callback("Unable to determine location!", undefined);
         } else {
-            console.log(chalk.greenBright(`The weather conditions in the area are currently ${body.current.weather_descriptions}`))
-            console.log(chalk.redBright(`* The wind direction is ${body.current.wind_dir}, and the speed is ${body.current.wind_speed}.`))
-            console.log(chalk.blueBright(`* The humidity outside is ${body.current.humidity}, and rainfall is ${body.current.precip}.`))
-            console.log(chalk.yellowBright(`* The temperature is ${body.current.temperature} degrees out, and it feels like ${body.current.feelslike}.`))
+            callback(undefined, `It is ${body.current.weather_descriptions} with ${body.current.humidity}`)
+        //     console.log(chalk.greenBright(`The weather conditions in the area are currently ${body.current.weather_descriptions}`))
+        //     console.log(chalk.redBright(`* The wind direction is ${body.current.wind_dir}, and the speed is ${body.current.wind_speed}.`))
+        //     console.log(chalk.blueBright(`* The humidity outside is ${body.current.humidity}, and rainfall is ${body.current.precip}.`))
+        //     console.log(chalk.yellowBright(`* The temperature is ${body.current.temperature} degrees out, and it feels like ${body.current.feelslike}.`))
         }
     })
 }

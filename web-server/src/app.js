@@ -1,6 +1,8 @@
 const path = require('path');
 const express = require('express');
 const hbs = require('hbs');
+const geocode = require('./utils/geocode')
+const forecast = require('./utils/forecast')
 
 const app = express();
 
@@ -22,7 +24,8 @@ app.use(express.static(publicDirectoryPath));
 app.get('', (req, res) => {
     res.render('index.hbs', {
         title: 'Weather App',
-        name: 'Isa Ali'
+        name: 'Isa Ali',
+        helpText: 'Input a search request.',
     })
 })
 
@@ -41,35 +44,44 @@ app.get('/help', (req, res) => {
     })
 })
 
-//1. No address? Send back an error message.
-// 2. Address? Send back the JSON.
-// 3. Add address property onto JSON which returns the provided address
-// 4. Test /weather and /weather?address=philadelphia
+
 
 app.get('/weather', (req, res) => {
     if (!req.query.address) {
         return res.send({
-            error: 'You must provide a search term'
+            error: 'You must provide an address!'
         })
     }
 
-    res.send({
-        forecast: "It is snowing",
-        location: "philadelphia",
-        address: req.query.address
+    geocode(req.query.address, (error, {latitude, longitude, location} = {}) => {
+        if (error) {
+            return res.send({error})
+        }
+
+        forecast(latitude, longitude, (error, forecastData) => {
+            if (error) {
+                return res.send({error})
+            }
+
+            res.send({
+                forecast: forecastData,
+                location,
+                address: req.query.address
+            })
+        })
     })
 })
 
-app.get('/products', (req, res) => {
-    if (!req.query.search) {
-        return res.send({
-            error: 'You must provide a search term'
-        })
-    }
-    res.send({
-        products: []
-    })
-})
+// app.get('/products', (req, res) => {
+//     if (!req.query.search) {
+//         return res.send({
+//             error: 'You must provide a search term'
+//         })
+//     }
+//     res.send({
+//         products: []
+//     })
+// })
 
 app.get('/help/*', (req, res) => {
     res.render('404header', {
