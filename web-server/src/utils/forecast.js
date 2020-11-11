@@ -9,13 +9,8 @@ const forecast = (latitude, longitude, callback) => {
         } else if (body.error) {
             callback("Unable to determine location!", undefined);
         } else {
-            callback(undefined, body.current.temperature)
-            // const weatherData = {
-            //     temp: body.current.temperature,
-            //     windspeed: body.current.wind_speed
-            // }
+            callback(undefined, body.current);
         }
-
     })
 }
 module.exports = forecast;
