@@ -3,35 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <title>Help</title>
-    <link rel="icon" href="/img/weather.png">
+    <link rel="icon" href="/img/blue.png">
     <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Monda&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/all.css">
 </head>
 <body>
-<body>
+
 <div class="main-content">
     {{>header}}
-    <p>Use this site to get your weather!</p>
-    <p>{{helpText}}</p>
-
-    <form action="">
-        <input placeholder="Location">
-        <button>Search</button>
-    </form>
-
-    <p id="message-1"></p>
-    <p id="message-2"></p>
-    <p id="message-3"></p>
-    <p id="message-4"></p>
-    <p id="message-5"></p>
-    <p id="message-6"></p>
-    <a id="img">
-        <img id="mainImg" src="">
-    </a>
-
+    <h1 class="title">The best site for your Weather Forecasts</h1>
+<!--        <p>{{helpText}}</p>-->
 </div>
+
+
+<!--Input-->
+<div class="container">
+    <div class="search-box">
+        <div class="search-icon"><i class="fas fa-search-location"></i></div>
+        <form action="" class="search-form">
+            <input type="text" placeholder="Search" id="search" autocomplete="off">
+        </form>
+        <svg class="search-border" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" viewBox="0 0 671 111" style="enable-background:new 0 0 671 111;"
+             xml:space="preserve">
+          <path class="border" d="M335.5,108.5h-280c-29.3,0-53-23.7-53-53v0c0-29.3,23.7-53,53-53h280"/>
+            <path class="border" d="M335.5,108.5h280c29.3,0,53-23.7,53-53v0c0-29.3-23.7-53-53-53h-280"/>
+        </svg>
+        <div class="go-icon"><i class="fa fa-arrow-right"></i></div>
+    </div>
+</div>
+<!--Input End-->
+<!--<form action="" class="form">-->
+<!--    <input placeholder="Location">-->
+<!--    <button>Search</button>-->
+<!--</form>-->
+
+
+<div class="flex-row">
+    <div class="search-container">
+        <div class="card">
+            <div class="card-image"></div>
+            <div class="card-text">
+                <span class="date" id="local-time">Date</span>
+                <h2 id="message-5">Sunny with Blue Skies!</h2>
+                <h2></h2>
+            </div>
+            <div class="card-stats">
+                <div class="stat">
+                    <div class="value" id="message-6">Temp<sup></sup></div>
+                    <div class="type"></div>
+                    <div class="value" id="feelslike"></div>
+                </div>
+                <div class="stat border">
+                    <div class="value" id="message-1">Location</div>
+                    <div class="type"></div>
+                </div>
+                <div class="stat">
+                    <div class="value" id="message-3">24 Hour Time</div>
+                    <div class="type"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="search-container">
+        <div class="card sub-card">
+            <div class="card-image-2"></div>
+            <div class="card-text">
+                <span class="date" id="message-2"></span>
+                <span class="date" id="direction"></span>
+                <h2>Wind Speed:</h2>
+                <h2 id="wind-speed"></h2>
+            </div>
+            <div class="card-stats sub-card-stats">
+            </div>
+        </div>
+    </div>
+
+    <div class="search-container">
+        <div class="card sub-card">
+            <div class="card-image-3"></div>
+            <div class="card-text">
+                <span class="date" id="cloudcover"></span>
+                <h2>Rain Fall:</h2>
+                <h2 id="precipitation"></h2>
+            </div>
+            <div class="card-stats sub-card-stats-2">
+            </div>
+        </div>
+    </div>
+
+    <div class="search-container">
+        <div class="card sub-card">
+            <div class="card-image-4"></div>
+            <div class="card-text">
+                <span class="date" id="message-4"></span>
+                <h2>Pressure:</h2>
+                <h2 id="pressure"></h2>
+            </div>
+            <div class="card-stats sub-card-stats-3">
+            </div>
+        </div>
+    </div>
+</div>
+<a id="img">
+    <img id="mainImg" src="">
+</a>
+
 {{>footer}}
 </body>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="/js/app.js"></script>
-</body>
 

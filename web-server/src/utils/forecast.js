@@ -9,7 +9,7 @@ const forecast = (latitude, longitude, callback) => {
         } else if (body.error) {
             callback("Unable to determine location!", undefined);
         } else {
-            callback(undefined, body.current);
+            callback(undefined, body);
         }
     })
 }

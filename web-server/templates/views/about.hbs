@@ -5,14 +5,52 @@
     <title>About</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="./css/all.css">
 </head>
-
+{{>header}}
 <body>
-<div class="main-content">
-    {{>header}}
-    <p>{{helpText}}</p>
+
+
+<div class="main-title title">About BlueSky
+    <hr class="line">
+</div>
+<div class="outer">
+    <h1 class="sub-title">How BlueSky Was Created:</h1>
+    <div class="center">
+        <img src="/img/astro-dev.png" alt="Astro Dev" class="main-image">
+        <div class="main-section">
+            <p class="content">BlueSky was created by Isa Ali who often goes by astro_dev online. It is my first attempt
+                at
+                working with Node.js and building an app, and it greatly helped me learn how to use JSON and server
+                fetching.
+            </p>
+            <p>
+                Blue sky works by taking the location input and sending it to a geolocation API which determines the
+                area
+                you searched for and returns the latitude and longitude.
+            </p>
+            <p>
+                Then it sends that data to a weather API and
+                retrieves a JSON text file with the most recent weather data for that region.
+                After that I just have to style and display the data and then you have a working weather site. I hope
+                this inspires other people to create a weather site as a learning experience, I'll link the GitHub
+                repository below so you can take a look at the code.
+            </p>
+        </div>
+    </div>
+
+    <h1 class="sub-title">View The Source Code:</h1>
+    <div class="center">
+
+        <div class="main-section">
+            <p>If you want to take a look at the code for yourself, or help improve BlueSky by submitting a pull request with your changes you can check out the Github
+                Repository here.</p>
+            <div class="size"><i class="fab fa-github-square fa-7x"></i></div>
+        </div>
+    </div>
+
 </div>
 
-{{>footer}}
 </body>
+{{>footer}}
 </html>
