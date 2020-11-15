@@ -9,7 +9,6 @@
     font-family: var(--font);
     margin: 0px;
     padding: 0px;
-    /*overflow-y: auto;*/
 }
 
 
@@ -18,7 +17,7 @@
 li, a, button {
     font-family: var(--font);
     font-weight: 500;
-    font-size: 16px;
+    font-size: 25px;
     color: black;
     text-decoration: none;
 }
@@ -595,7 +594,8 @@ p {
     }
 
     .sub-title {
-        font-size: 30px;
+        font-size: 40px;
+        overflow-x: auto;
     }
 
     #paragraph2 {
@@ -617,6 +617,10 @@ p {
 
     header {
         flex-direction: column;
+    }
+
+    li, a {
+        font-size: 25px;
     }
 }
 
