@@ -5,12 +5,33 @@
     <title>Help</title>
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="./css/all.css">
 </head>
+{{>header}}
 <body>
-<div class="main-content">
-    {{>header}}
-    <p>{{helpText}}</p>
+
+<div class="main-title title">Help and FAQ
+    <hr class="line">
+</div>
+<div class="outer">
+    <div class="sub-title">How Do You Use BlueSky?</div>
+    <div class="center">
+        <div class="main-section">
+            <p class="content">Using BlueSky is simple, just input the location you want to search into the search box and press enter.
+                The weather for the location should be displayed below.
+            </p>
+            <div class="sub-title">How Accurate Should My Input Be?</div>
+            <p>
+                You can search for a country, city, or street address. If the search you input returns an incorrect or invalid location, please provide a more detailed location like New York, New York, United States, providing the Province, City, and Country.
+            </p>
+            <div class="sub-title">Can I View Past and Future Weather Data?</div>
+            <p>
+                BlueSky currently only supports daily weather data, although data for more days may come soon!
+            </p>
+        </div>
+    </div>
 </div>
 
-{{>footer}}
+
 </body>
+{{>footer}}

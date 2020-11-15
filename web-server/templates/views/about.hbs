@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>About</title>
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="icon" href="/img/weather.png">
+    <link rel="icon" href="/img/blue.png">
     <link rel="stylesheet" href="./css/all.css">
 </head>
 {{>header}}
@@ -15,7 +15,7 @@
     <hr class="line">
 </div>
 <div class="outer">
-    <h1 class="sub-title">How BlueSky Was Created:</h1>
+    <div class="sub-title">How BlueSky Was Created:</div>
     <div class="center">
         <img src="/img/astro-dev.png" alt="Astro Dev" class="main-image">
         <div class="main-section">
@@ -33,8 +33,7 @@
                 Then it sends that data to a weather API and
                 retrieves a JSON text file with the most recent weather data for that region.
                 After that I just have to style and display the data and then you have a working weather site. I hope
-                this inspires other people to create a weather site as a learning experience, I'll link the GitHub
-                repository below so you can take a look at the code.
+                this inspires other people to create a weather site as a learning experience, and you can use my site as an example.
             </p>
         </div>
     </div>
@@ -43,12 +42,16 @@
     <div class="center">
 
         <div class="main-section">
-            <p>If you want to take a look at the code for yourself, or help improve BlueSky by submitting a pull request with your changes you can check out the Github
+            <p id="paragraph2">If you want to take a look at the code for yourself, or help improve BlueSky by submitting a pull request
+                with your changes you can check out the Github
                 Repository here.</p>
-            <div class="size"><i class="fab fa-github-square fa-7x"></i></div>
+            <a target="_blank" href="https://github.com/astroDev18/BlueSky">
+                <div class="size img-size"><i class="fab fa-github-square fa-9x" ></i><img
+                        src="https://github-readme-stats.vercel.app/api/pin/?username=astroDev18&repo=BlueSky&show_owner=true"
+                        alt="Github-Repo" class="github-image" id="git"></div>
+            </a>
         </div>
     </div>
-
 </div>
 
 </body>

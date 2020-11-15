@@ -13,8 +13,8 @@
 
 <div class="main-content">
     {{>header}}
-    <h1 class="title">The best site for your Weather Forecasts</h1>
-<!--        <p>{{helpText}}</p>-->
+    <h1 class="title sub-title">The best site for your Weather Forecasts</h1>
+    <!--        <p>{{helpText}}</p>-->
 </div>
 
 
@@ -25,7 +25,9 @@
         <form action="" class="search-form">
             <input type="text" placeholder="Search" id="search" autocomplete="off">
         </form>
-        <svg class="search-border" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" viewBox="0 0 671 111" style="enable-background:new 0 0 671 111;"
+        <svg class="search-border" version="1.1" xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+             x="0px" y="0px" viewBox="0 0 671 111" style="enable-background:new 0 0 671 111;"
              xml:space="preserve">
           <path class="border" d="M335.5,108.5h-280c-29.3,0-53-23.7-53-53v0c0-29.3,23.7-53,53-53h280"/>
             <path class="border" d="M335.5,108.5h280c29.3,0,53-23.7,53-53v0c0-29.3-23.7-53-53-53h-280"/>
@@ -38,34 +40,32 @@
 <!--    <input placeholder="Location">-->
 <!--    <button>Search</button>-->
 <!--</form>-->
-
-
 <div class="flex-row">
-    <div class="search-container">
-        <div class="card">
-            <div class="card-image"></div>
-            <div class="card-text">
-                <span class="date" id="local-time">Date</span>
-                <h2 id="message-5">Sunny with Blue Skies!</h2>
-                <h2></h2>
-            </div>
-            <div class="card-stats">
-                <div class="stat">
-                    <div class="value" id="message-6">Temp<sup></sup></div>
-                    <div class="type"></div>
-                    <div class="value" id="feelslike"></div>
+        <div class="search-container">
+            <div class="card">
+                <div class="card-image"></div>
+                <div class="card-text">
+                    <span class="date" id="local-time">Date</span>
+                    <h2 id="message-5">Sunny with Blue Skies!</h2>
+                    <h2></h2>
                 </div>
-                <div class="stat border">
-                    <div class="value" id="message-1">Location</div>
-                    <div class="type"></div>
-                </div>
-                <div class="stat">
-                    <div class="value" id="message-3">24 Hour Time</div>
-                    <div class="type"></div>
+                <div class="card-stats">
+                    <div class="stat">
+                        <div class="value" id="message-6">Temp<sup></sup></div>
+                        <div class="type"></div>
+                        <div class="value" id="feelslike"></div>
+                    </div>
+                    <div class="stat border">
+                        <div class="value" id="message-1">Location</div>
+                        <div class="type"></div>
+                    </div>
+                    <div class="stat">
+                        <div class="value" id="message-3">24 Hour Time</div>
+                        <div class="type"></div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
     <div class="search-container">
         <div class="card sub-card">
