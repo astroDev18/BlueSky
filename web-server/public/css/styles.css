@@ -312,10 +312,11 @@ button {
 .container {
     position: relative;
     margin: calc(0px + 2vh + 2vw) auto 0 auto;
-    padding-bottom: 20px;
+    padding-bottom: 70px;
     width: 100%;
     max-width: 100vw;
 }
+
 
 .search-box {
     position: relative;
@@ -333,6 +334,7 @@ button {
     width: 86px;
     line-height: 61px;
     text-align: center;
+    max-width: 70vw;
 }
 .search-icon {
     image: url("/img/transparency.svg");
@@ -394,7 +396,7 @@ button {
     position: absolute;
     top: 3px;
     left: 0;
-    width: 100%;
+    width: 75%;
     height: 100%;
     border-radius: 120px;
     border: none;
@@ -405,6 +407,7 @@ button {
     font-weight: 400;
     letter-spacing: -0.015em;
     outline: none;
+
 }
 
 /* Media Query */
