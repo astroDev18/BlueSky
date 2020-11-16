@@ -9,6 +9,7 @@
     font-family: var(--font);
     padding: 0;
     margin: 0;
+    max-width: 100vw;
 }
 
 body {
@@ -44,7 +45,6 @@ header {
 
 .logo {
     width: 50px;
-    max-width: 75px;
     cursor: pointer;
     margin-right: 15px;
 }
@@ -76,7 +76,7 @@ header {
 
 .nav__links li {
     display: inline-block;
-    padding: 0px 20px;
+    padding: 0px 25px;
 }
 
 .nav__links li a {
@@ -87,16 +87,7 @@ header {
     color: #0088a9;
 }
 
-button {
-    padding: 8px 25px;
-    background-color: var(--blue);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
 /* ===========  Header-End ==========*/
-
 .title {
     color: var(--blue);
     text-align: center;
@@ -107,6 +98,7 @@ button {
 /* ========== Weather Card =========== */
 .card {
     display: grid;
+
     grid-template-columns: 420px;
     grid-template-rows: 350px 150px 170px;
     grid-template-areas: "image" "text" "stats";
@@ -325,12 +317,6 @@ button {
     flex: 1 0 auto;
 }
 
-
-
-.portrait {
-    width: 250px;
-}
-
 /* Input Section */
 .container {
     position: relative;
@@ -341,6 +327,7 @@ button {
 }
 
 
+
 .search-box {
     position: relative;
     width: 100%;
@@ -349,6 +336,7 @@ button {
     border-radius: 120px;
     margin: 0 auto;
 }
+
 
 .search-icon, .go-icon {
     position: absolute;
@@ -395,7 +383,7 @@ button {
 .search-border {
     display: block;
     width: 100%;
-    max-width: 360px;
+    max-width: 100%;
     height: 60px;
 }
 .border {
@@ -430,7 +418,6 @@ button {
     font-weight: 400;
     letter-spacing: -0.015em;
     outline: none;
-
 }
 
 /* Media Query */
@@ -597,10 +584,6 @@ p {
     color: #b8b3e9;
 }
 
-/*@media (max-width: 1000px) {*/
-/*    */
-/*}*/
-
 @media (max-width: 1000px) {
 
     .main-title {
@@ -640,8 +623,7 @@ p {
 
     header {
         flex-direction: column;
-        margin-right: auto;
-        margin-left: auto;
+        text-align: center;
     }
 
     li, a {
@@ -678,6 +660,41 @@ p {
         background-color: #fffded;
     }
 
+    .logo {
+        max-width: 25%;
+        margin-right: 5%;
+    }
+
+    #logo-container {
+        margin: 5%;
+    }
+
+    #logo-text {
+        margin-top: 0%;
+    }
+
+    .nav__links li {
+        padding: 0 5%;
+    }
+
+    .container {
+        padding-bottom: 5%;
+    }
+
+    .search-box {
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        height: 5%;
+        border-radius: 120px;
+        margin: 0 auto;
+    }
+    .search-border {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: 50%;
+    }
 }
 
 
