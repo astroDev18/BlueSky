@@ -52,7 +52,7 @@ header {
 #logo-container {
     display: flex;
     flex-direction: row;
-    margin: 25px;
+    max-width: 100px;
 }
 
 #logo-text {
