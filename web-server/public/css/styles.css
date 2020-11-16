@@ -309,10 +309,9 @@ header {
 .footer {
     color: var(--blue);
     border-top: 1px solid #eeeeee;
-    margin-top: 16px;
-    padding: 16px 0;
     text-align: center;
     background-color: #f2f5ea;
+    width: 100%;
     display: block;
     flex: 1 0 auto;
 }
@@ -321,7 +320,7 @@ header {
 .container {
     position: relative;
     margin: calc(0px + 2vh + 2vw) auto 0 auto;
-    padding-bottom: 70px;
+    padding-bottom: 20px;
     width: 100%;
     max-width: 100vw;
 }
@@ -345,7 +344,6 @@ header {
     width: 86px;
     line-height: 61px;
     text-align: center;
-    max-width: 70vw;
 }
 .search-icon {
     image: url("/img/transparency.svg");
@@ -383,7 +381,7 @@ header {
 .search-border {
     display: block;
     width: 100%;
-    max-width: 100%;
+    max-width: 360px;
     height: 60px;
 }
 .border {
@@ -681,20 +679,20 @@ p {
         padding-bottom: 5%;
     }
 
-    .search-box {
-        position: relative;
-        width: 100%;
-        max-width: 100%;
-        height: 5%;
-        border-radius: 120px;
-        margin: 0 auto;
-    }
-    .search-border {
-        display: block;
-        width: 100%;
-        max-width: 100%;
-        height: 50%;
-    }
+    /*.search-box {*/
+    /*    position: relative;*/
+    /*    width: 100%;*/
+    /*    max-width: 100%;*/
+    /*    height: 5%;*/
+    /*    border-radius: 120px;*/
+    /*    margin: 0 auto;*/
+    /*}*/
+    /*.search-border {*/
+    /*    display: block;*/
+    /*    width: 100%;*/
+    /*    max-width: 100%;*/
+    /*    height: 50%;*/
+    /*}*/
 }
 
 
