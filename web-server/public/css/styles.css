@@ -7,8 +7,21 @@
 
 * {
     font-family: var(--font);
-    margin: 0px;
-    padding: 0px;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+#main {
+    display: block;
+    flex: 1 0 auto;
 }
 
 
@@ -28,30 +41,32 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
+    text-align: center;
 }
 
 .logo {
-    max-width: 60px;
+    max-width: 4vw;
     cursor: pointer;
     margin-right: 15px;
 }
 
 #logo-container {
-    display: inline-flex;
+    display: flex;
+    flex-direction: row;
 }
 
-/*#logo-text {*/
-/*   font-size: 25px;*/
-/*}*/
+#logo-text {
+   margin-top: 10px;
+}
 
 #color {
-    font-size: 35px;
+    font-size: 2vw;
     color: var(--blue);
     margin: 0px;
 }
 
 #color2 {
-    font-size: 35px;
+    font-size: 2vw;
 }
 
 
@@ -208,6 +223,11 @@ button {
     flex-direction: row;
     align-content: space-evenly;
     gap: 0px;
+    max-width: 1500px;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .sub-card-stats {
@@ -301,7 +321,11 @@ button {
     padding: 16px 0;
     text-align: center;
     background-color: #f2f5ea;
+    display: block;
+    flex: 1 0 auto;
 }
+
+
 
 .portrait {
     width: 250px;
@@ -622,6 +646,21 @@ p {
     li, a {
         font-size: 25px;
     }
+
+    #color {
+        font-size: 40px;
+    }
+    #color2 {
+        font-size: 40px;
+    }
+
 }
+
+/*@media (max-width: 1500px) {*/
+/*    flex-row {*/
+/*        max-width: 75vw;*/
+/*    }*/
+/*}*/
+
 
 
