@@ -17,7 +17,7 @@ const windDirection = document.querySelector('#direction');
 const pressure = document.querySelector('#pressure');
 const feelslike = document.querySelector(`#feelslike`);
 
-weatherForm.addEventListener('#submit', (e) => {
+weatherForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const location = search.value;
 
