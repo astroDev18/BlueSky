@@ -45,7 +45,8 @@ header {
 }
 
 .logo {
-    max-width: 4vw;
+    width: 50px;
+    max-width: 75px;
     cursor: pointer;
     margin-right: 15px;
 }
@@ -53,6 +54,7 @@ header {
 #logo-container {
     display: flex;
     flex-direction: row;
+    margin: 25px;
 }
 
 #logo-text {
